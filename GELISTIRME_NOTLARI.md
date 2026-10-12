@@ -147,3 +147,33 @@ Yeni bir ürün eklemek veya var olan bir ürünü değiştirmek için sadece **
   ```
 * **HTML Dosyaları:**  
   `index.html` ve `urun-detay.html` içindeki footer ve iletişim kartları da bu değerlerle tam uyumlu çalışmaktadır.
+
+---
+
+## 🌐 6. Squarespace Domain & GitHub Pages HTTPS (SSL) Kurulum Rehberi
+
+Squarespace'ten aldığınız alan adını GitHub Pages projenize bağlamak ve güvenli bağlantı (**HTTPS - SSL**) sağlamak için izlenecek adımlar:
+
+### A. Repoya Eklenen `CNAME` Dosyası
+* Reponuzun kök dizinine otomatik olarak `CNAME` dosyası oluşturuldu ve GitHub'a yüklendi.
+* İçerisinde `www.gkcollcetion.com` yer almaktadır. Bu dosya GitHub Pages'e hangi alan adına hizmet vereceğini bildirir.
+
+### B. Squarespace DNS Yönetiminde Eklenecek Kayıtlar
+Squarespace Domains kontrol panelinde (`domains.squarespace.com`) ilgili alan adınızı seçip **"DNS Settings" (DNS Ayarları)** bölümüne gidin. Varsa varsayılan çakışan kayıtları temizleyip şu kayıtları ekleyin:
+
+1. **4 Adet GitHub IP Adresi (Apex / Kök Alan Adı İçin A Kayıtları):**
+   * **Host:** `@` | **Type:** `A` | **Data:** `185.199.108.153`
+   * **Host:** `@` | **Type:** `A` | **Data:** `185.199.109.153`
+   * **Host:** `@` | **Type:** `A` | **Data:** `185.199.110.153`
+   * **Host:** `@` | **Type:** `A` | **Data:** `185.199.111.153`
+
+2. **1 Adet CNAME Kaydı (`www` Alt Alan Adı İçin):**
+   * **Host:** `www` | **Type:** `CNAME` | **Data:** `AlpedeoR.github.io.`
+
+### C. GitHub Pages'te HTTPS'i Aktifleştirme
+1. GitHub reponuza gidin: `https://github.com/AlpedeoR/gulcancollection` -> **Settings** -> **Pages**.
+2. **Custom domain** alanında `www.gkcollcetion.com` yazısını doğrulayın.
+3. DNS kayıtları Squarespace tarafından dünyaya yayıldığında (yaklaşık 10-30 dakika), GitHub otomatik olarak ücretsiz bir Let's Encrypt SSL sertifikası tanımlar.
+4. Sertifika hazır olduğunda sayfadaki **"Enforce HTTPS"** kutucuğu aktif hale gelir. Bu kutucuğu işaretleyin.
+5. Artık sitenize hem `http://` hem `https://` ile girilse bile otomatik olarak güvenli `https://www.gkcollcetion.com` adresine yönlenir ve tarayıcıda kilit simgesi görünür.
+
