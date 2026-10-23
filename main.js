@@ -10,9 +10,9 @@
 
 // Site Genel İletişim Sabitleri
 const SITE_CONFIG = {
-    phoneDisplay: "0544 594 64 10",
-    phoneTel: "+905445946410",
-    whatsappNumber: "905445946410",
+    phoneDisplay: "0545 594 64 10",
+    phoneTel: "+905455946410",
+    whatsappNumber: "905455946410",
     instagramHandle: "@gulcancollection",
     instagramUrl: "https://instagram.com/gulcancollection",
     email: "alpkoz24@gmail.com"

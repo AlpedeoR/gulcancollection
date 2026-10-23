@@ -118,8 +118,8 @@ Yeni bir ürün eklemek veya var olan bir ürünü değiştirmek için sadece **
 
 İlettiğiniz iletişim bilgileri tüm siteye, ürün detay sayfalarına ve sipariş butonlarına entegre edildi:
 
-* **Telefon & WhatsApp Hattı:** `0544 594 64 10`  
-  * Uluslararası WhatsApp formatı: `905445946410`
+* **Telefon & WhatsApp Hattı:** `0545 594 64 10`  
+  * Uluslararası WhatsApp formatı: `905455946410`
   * Ürün detay sayfasındaki **"Sipariş Ver / WhatsApp'tan Yaz"** butonuna bağlandı. Müşteri butona bastığında seçtiği renk ve ürün adı otomatik olarak WhatsApp mesajına doldurulur.
   * Ana sayfada **"İletişim & Özel Sipariş Hattı"** başlığı altında öne çıkan yeşil WhatsApp iletişim kartı oluşturuldu.
   * Ekranın sağ alt köşesine her sayfada görünen **Sabit (Floating) WhatsApp Butonu** eklendi. Müşteri dilediği sayfadan tek tıkla WhatsApp'a geçip soru sorabilir.
@@ -137,9 +137,9 @@ Yeni bir ürün eklemek veya var olan bir ürünü değiştirmek için sadece **
   Dosyanın en başında bulunan `SITE_CONFIG` objesi sayesinde numarayı veya kullanıcı adını tek bir yerden değiştirebilirsiniz:
   ```javascript
   const SITE_CONFIG = {
-      phoneDisplay: "0544 594 64 10",
-      phoneTel: "+905445946410",
-      whatsappNumber: "905445946410",
+      phoneDisplay: "0545 594 64 10",
+      phoneTel: "+905455946410",
+      whatsappNumber: "905455946410",
       instagramHandle: "@gulcancollection",
       instagramUrl: "https://instagram.com/gulcancollection",
       email: "alpkoz24@gmail.com"
