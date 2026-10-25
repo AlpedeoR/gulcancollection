@@ -12,7 +12,7 @@ const PRODUCTS_DATA = [
         name: "Simli Makrome Geometrik Omuz Çantası",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "850 ₺",
+        price: "1850 ₺",
         image: "images/canta-simli-geometrik-bej.jpg",
         images: [
             "images/canta-simli-geometrik-bej.jpg",
@@ -41,7 +41,7 @@ const PRODUCTS_DATA = [
         name: "Tahta Saplı Doğal Pamuk Makrome Çanta",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "890 ₺",
+        price: "1890 ₺",
         image: "images/canta-tahta-sapli-makrome.jpg",
         images: [
             "images/canta-tahta-sapli-makrome.jpg"
@@ -68,7 +68,7 @@ const PRODUCTS_DATA = [
         name: "Çift Renk Çizgili Puf Örgü Hobo Çanta",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "950 ₺",
+        price: "1950 ₺",
         image: "images/canta-cizgili-puf-kahve.jpg",
         images: [
             "images/canta-cizgili-puf-kahve.jpg",
@@ -123,7 +123,7 @@ const PRODUCTS_DATA = [
         name: "Fiyonk Detaylı Fitilli El Örgüsü Kol Çantası",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "880 ₺",
+        price: "1880 ₺",
         image: "images/canta-fiyonklu-fitilli.jpg",
         images: [
             "images/canta-fiyonklu-fitilli.jpg"
@@ -150,7 +150,7 @@ const PRODUCTS_DATA = [
         name: "Simli Geometrik Omuz Çantası (Füme Gri)",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "850 ₺",
+        price: "1850 ₺",
         image: "images/canta-simli-geometrik-gri.jpg",
         images: [
             "images/canta-simli-geometrik-gri.jpg",
