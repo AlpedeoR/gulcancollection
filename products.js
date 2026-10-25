@@ -6,72 +6,172 @@
  */
 
 const PRODUCTS_DATA = [
-    // --- 1. ÇANTALAR ---
+    // --- 1. ÇANTALAR (GERÇEK FOTOĞRAFLI MODELLER) ---
     {
-        id: "bohem-makrome-omuz-cantasi",
-        name: "Bohem Makrome Omuz Çantası",
+        id: "simli-makrome-geometrik-omuz-cantasi",
+        name: "Simli Makrome Geometrik Omuz Çantası",
         category: "cantalar",
         categoryLabel: "Çantalar",
         price: "850 ₺",
-        shortDesc: "Doğal pamuk iplikten elde örülmüş, astarlı ve şık omuz çantası.",
-        description: "Geleneksel makrome el düğümleme sanatı ile modern çizgilerin buluştuğu bu özel çanta, günlük stilinize sıcak ve zarif bir dokunuş katar. %100 pamuklu ip kullanılarak tamamen elde üretilmiştir. İç kısmı kumaş astarlı olup eşyalarınızın güvenle taşınmasını sağlar.",
-        dimensions: "Genişlik: 28 cm | Yükseklik: 24 cm | Askı Boyu: 95 cm",
-        material: "%100 Doğal Pamuk Makrome İpi, Pamuklu İç Astar, Fermuarlı İç Cep",
-        productionTime: "3 - 5 iş günü",
-        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle özen ve sevgiyle dokuyorum.",
-        colorNote: "Farklı renk ve ebat seçenekleri mevcuttur. Aşağıdaki renklerden dilediğinizi seçebilir veya özel renk talebiniz için bizimle iletişime geçebilirsiniz.",
-        colors: [
-            { name: "Doğal Ekru", code: "#F4EFE6" },
-            { name: "Kiremit Toprak", code: "#C87965" },
-            { name: "Adaçayı Yeşili", code: "#8A9A86" },
-            { name: "Hardal Sarısı", code: "#D4A373" },
-            { name: "Mat Siyah", code: "#2B2B2B" }
+        image: "images/canta-simli-geometrik-bej.jpg",
+        images: [
+            "images/canta-simli-geometrik-bej.jpg",
+            "images/canta-simli-geometrik-bej-2.jpg",
+            "images/canta-simli-geometrik-gri.jpg"
         ],
-        careInstructions: "Nemli bir bezle hafifçe silinmesi önerilir. Çamaşır makinesinde yıkamayınız. Direkt güneş altında uzun süre bırakmayınız.",
+        shortDesc: "Tığ işi piramit kabartma dokulu, ışıltılı simli makrome omuz çantası.",
+        description: "GK Collection imzalı bu özel model, el emeği tığ işi kabartma piramit tekniği ile simli makrome ipin göz alıcı ışıltısını bir araya getiriyor. Gold metal halkalarla güçlendirilmiş el örgüsü omuz askısı sayesinde gün boyu konforlu bir kullanım sağlar. Hakiki deri GK Collection logomuz ile tamamlanmıştır.",
+        dimensions: "Genişlik: 24 cm | Yükseklik: 18 cm | Askı Boyu: 65 cm",
+        material: "Özel Işıltılı Simli Makrome İpi, Gold Metal Halka Bağlantılar, Deri GK Etiket",
+        productionTime: "2 - 3 iş günü",
+        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle ilmek ilmek dokuyorum.",
+        colorNote: "Fotoğraflardaki Simli Şampanya/Bej ve Simli Füme/Gri renklerin yanı sıra gardırobunuza uygun dilediğiniz özel simli renkte de örülebilir.",
+        colors: [
+            { name: "Simli Şampanya / Bej", code: "#D4C4A8", image: "images/canta-simli-geometrik-bej.jpg" },
+            { name: "Simli Füme / Gri", code: "#7A8288", image: "images/canta-simli-geometrik-gri.jpg" },
+            { name: "Simli Gece Siyahı", code: "#1C1C1C" },
+            { name: "Simli Kiremit", code: "#C87965" },
+            { name: "Simli Zümrüt Yeşili", code: "#2D5A4C" }
+        ],
+        careInstructions: "Elde nazikçe ılık su ile yıkanmalıdır. Düz zeminde kurutunuz, çamaşır makinesinde sıkma yapmayınız.",
         badge: "Çok Satan"
     },
     {
-        id: "vintage-orgu-baget-canta",
-        name: "Vintage Burgu Örgü Baget Çanta",
+        id: "tahta-sapli-pamuk-makrome-canta",
+        name: "Tahta Saplı Doğal Pamuk Makrome Çanta",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "720 ₺",
-        shortDesc: "Zarif burgu desenli, fermuar kapamalı retro kol çantası.",
-        description: "Minimalist ve retro görünümü bir arada sunan burgu örgü baget çanta, gündüzden geceye her kombininize uyum sağlar. Sık dokulu yapısı sayesinde formunu uzun yıllar korur. Metal fermuarı ve dayanıklı sapı ile konforlu kullanım sunar.",
-        dimensions: "Genişlik: 25 cm | Yükseklik: 15 cm | Derinlik: 6 cm",
-        material: "Özel Bükümlü Pamuk Kordon İp, Fermuarlı Kapanış, Şık İç Astar",
-        productionTime: "3 - 4 iş günü",
-        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle ilmek ilmek işliyorum.",
-        colorNote: "Farklı renk seçenekleri mevcuttur. Gardırobunuza en uygun tonu seçebilir veya özel renk talep edebilirsiniz.",
-        colors: [
-            { name: "Krem Bej", code: "#EFE8DA" },
-            { name: "Taba Kahve", code: "#9C6644" },
-            { name: "Pudra Pembe", code: "#E8B4B8" },
-            { name: "Gece Mavisi", code: "#1D2D44" }
+        price: "890 ₺",
+        image: "images/canta-tahta-sapli-makrome.jpg",
+        images: [
+            "images/canta-tahta-sapli-makrome.jpg"
         ],
-        careInstructions: "Elde ılık su ile nazikçe temizlenebilir. Düz zeminde kurutunuz.",
-        badge: "Yeni Sezon"
+        shortDesc: "Doğal masif tahta kulplu, tok dokulu el örgüsü pamuk makrome el çantası.",
+        description: "Doğallıktan ilham alan tasarımıyla kalın dokulu pamuk makrome iplik ve pürüzsüz doğal masif ahşap kulpun mükemmel uyumu. Tok duruşu ve geniş iç hacmiyle günlük kullanımda hem çok pratik hem de bohem bir şıklık sunar. Deri GK Collection logo detayıyla özel el işçiliği.",
+        dimensions: "Genişlik (En): 25 cm | Yükseklik (Boy): 14 cm | Kulp Dahil: 24 cm",
+        material: "%100 Pamuk Makrome İpi, Doğal Masif Ahşap Oval Kulp, Deri GK Etiket",
+        productionTime: "1 hafta içinde kargoda (5 - 7 iş günü)",
+        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle sağlam ve titiz bir işçilikle hazırlıyorum.",
+        colorNote: "Doğal krem/ekru rengin haricinde dilediğiniz toprak ve pastel tonlarda da sipariş üzerine üretilebilir.",
+        colors: [
+            { name: "Doğal Ekru / Krem", code: "#EFE8DA", image: "images/canta-tahta-sapli-makrome.jpg" },
+            { name: "Toprak / Karamel", code: "#9C6644" },
+            { name: "Adaçayı Yeşili", code: "#8A9A86" },
+            { name: "Kiremit Tonu", code: "#C87965" },
+            { name: "Mat Siyah", code: "#2B2B2B" }
+        ],
+        careInstructions: "Nemli bir bezle silinerek temizlenmesi tavsiye edilir. Ahşap kulp kısmının uzun süre ıslak kalmamasına özen gösteriniz.",
+        badge: "Yeni Model"
     },
     {
-        id: "buyuk-hasir-plaj-alisveris-cantasi",
-        name: "Doğal Jüt & Örgü Tote Çanta",
+        id: "cizgili-puf-orgu-hobo-canta",
+        name: "Çift Renk Çizgili Puf Örgü Hobo Çanta",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "980 ₺",
-        shortDesc: "Geniş iç hacimli, sağlam örgü askılı sahil ve şehir çantası.",
-        description: "Doğal jüt lifleri ve pamuk ipliğin harmanlanmasıyla elde örülen bu tote çanta, hem şehir hayatının koşturmacasında hem de sahil günlerinde en kullanışlı yardımcınız olacak. Geniş hacmi sayesinde kitap, tablet, cüzdan ve kişisel eşyalarınızı rahatlıkla sığdırabilirsiniz.",
-        dimensions: "Genişlik: 38 cm | Yükseklik: 34 cm | Taban Derinliği: 12 cm",
-        material: "Doğal Jüt Lif & Pamuk Karışımı, Güçlendirilmiş Omuz Askısı",
-        productionTime: "4 - 6 iş günü",
-        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle sağlam ve titiz bir işçilikle hazırlıyorum.",
-        colorNote: "Doğal jüt rengine ek olarak askı ve kenar örgü detaylarında farklı renk seçenekleri sunulmaktadır.",
-        colors: [
-            { name: "Doğal Jüt & Krem", code: "#D8C3A5" },
-            { name: "Doğal Jüt & Kiremit", code: "#B85D43" },
-            { name: "Doğal Jüt & Antrasit", code: "#4A4E69" }
+        price: "950 ₺",
+        image: "images/canta-cizgili-puf-kahve.jpg",
+        images: [
+            "images/canta-cizgili-puf-kahve.jpg",
+            "images/canta-cizgili-puf-ekru.jpg"
         ],
-        careInstructions: "Sadece leke temizliği yapınız. Islak bez ile silip havalandırınız.",
+        shortDesc: "Çift renkli çizgili, kabartmalı puf örgü dokulu geniş hacimli hobo omuz çantası.",
+        description: "Geniş iç hacmi ve dökümlü salaş hobo formu ile gün boyu yanınızdan ayırmak istemeyeceğiniz bir tasarım. Çift renkli yatay çizgileri kabartan puf (popcorn) dikiş detayları çantaya zengin bir doku kazandırır. İç kısmındaki koruyucu kumaş astarı eşyalarınızı güvende tutar.",
+        dimensions: "Genişlik: 36 cm | Yükseklik: 28 cm | Taban Derinliği: 10 cm",
+        material: "Kalın Pamuk Kordon İplik, Kabartmalı Puf Dikişler, Kumaş İç Astar, Deri GK Etiket",
+        productionTime: "3 - 5 iş günü",
+        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle sevgi ve özenle örüyorum.",
+        colorNote: "Fotoğraflardaki Çikolata Kahve & Ekru ve Ekru & Çikolata Kahve kombinasyonlarının yanı sıra istediğiniz çift renk kombinasyonu yapılabilir.",
+        colors: [
+            { name: "Çikolata Kahve & Ekru Çizgili", code: "#5C4033", image: "images/canta-cizgili-puf-kahve.jpg" },
+            { name: "Ekru & Çikolata Kahve Çizgili", code: "#EDE6D6", image: "images/canta-cizgili-puf-ekru.jpg" },
+            { name: "Kiremit & Krem Çizgili", code: "#C87965" },
+            { name: "Adaçayı Yeşili & Ekru Çizgili", code: "#8A9A86" },
+            { name: "Antrasit & Taş Rengi Çizgili", code: "#2B2B2B" }
+        ],
+        careInstructions: "Elde ılık suda nazikçe yıkanabilir. Düz zeminde kurutunuz, çamaşır suyu kullanmayınız.",
+        badge: "Geniş Hacim"
+    },
+    {
+        id: "ahsap-boncuk-sapli-sepet-canta",
+        name: "Ahşap Boncuk Saplı El Örgüsü Sepet Çanta",
+        category: "cantalar",
+        categoryLabel: "Çantalar",
+        price: "920 ₺",
+        image: "images/canta-ahsap-boncuk-sepet.jpg",
+        images: [
+            "images/canta-ahsap-boncuk-sepet.jpg"
+        ],
+        shortDesc: "Siyah ahşap halka ve küre boncuk saplı, tok duruşlu şık sepet çanta.",
+        description: "Geometrik ve asil bir duruş! Sık dokuma tekniğiyle örülmüş tok duruşlu sepet gövde, siyah cilalı ahşap halka ve boncuklardan oluşan el yapımı çift sap ile taçlandırılmıştır. Hem elde taşımaya hem de kolda duruşa uygun ergonomik yapısıyla davetlerde ve özel günlerde göz kamaştırır.",
+        dimensions: "Genişlik: 28 cm | Yükseklik: 20 cm | Taban Genişliği: 9 cm",
+        material: "Dayanıklı Sık İğne Makrome Örgü, Cilalı Siyah Ahşap Boncuklar ve Halkalar, Deri GK Etiket",
+        productionTime: "3 - 4 iş günü",
+        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle tek tek boncukları dizerek hazırlıyorum.",
+        colorNote: "Asil siyahın yanı sıra krem, acı kahve veya bordo renk seçenekleri mevcuttur.",
+        colors: [
+            { name: "Mat Asil Siyah", code: "#1C1C1C", image: "images/canta-ahsap-boncuk-sepet.jpg" },
+            { name: "Acı Kahve / Moka", code: "#4A3728" },
+            { name: "Doğal Ekru", code: "#F5F2EB" },
+            { name: "Bordo / Vişne", code: "#6B2D35" },
+            { name: "Haki Yeşili", code: "#556B2F" }
+        ],
+        careInstructions: "Nemli bir bezle silinerek temizlenmesi önerilir. Ahşap boncukların parlaklığını korumak için yoğun sudan uzak tutunuz.",
         badge: "Özel Tasarım"
+    },
+    {
+        id: "fiyonk-detayli-fitilli-kol-cantasi",
+        name: "Fiyonk Detaylı Fitilli El Örgüsü Kol Çantası",
+        category: "cantalar",
+        categoryLabel: "Çantalar",
+        price: "880 ₺",
+        image: "images/canta-fiyonklu-fitilli.jpg",
+        images: [
+            "images/canta-fiyonklu-fitilli.jpg"
+        ],
+        shortDesc: "Fitilli dikey örgü dokulu, metal halkalı ve sevimli fiyonk detaylı kol çantası.",
+        description: "Dikey fitilli örgü deseni, gümüş metal halkalarla bağlanan yumuşacık örgü askısı ve ön kısmındaki el yapımı çift katmanlı fiyonk detayıyla feminen ve neşeli bir stil sunar. İster spor ister klasik kombinlerle keyifle kullanabileceğiniz özel bir parça.",
+        dimensions: "Genişlik: 26 cm | Yükseklik: 22 cm | Kol Askı Boyu: 55 cm",
+        material: "Fitilli Pamuklu İplik, Gümüş Metal Halka Bağlantılar, Çift Renk El Örgüsü Fiyonk, Deri GK Etiket",
+        productionTime: "3 - 5 iş günü",
+        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle özenle dikip örüyorum.",
+        colorNote: "Gövde, askı ve fiyonk renklerinde dilediğiniz özel renk kombinasyonları yapılabilmektedir.",
+        colors: [
+            { name: "Antrasit (Fıstık Yeşili & Tarçın Fiyonk)", code: "#3A3532", image: "images/canta-fiyonklu-fitilli.jpg" },
+            { name: "Krem & Pudra Pembe", code: "#F7F4EE" },
+            { name: "Kiremit & Bej", code: "#C87965" },
+            { name: "Adaçayı Yeşili & Ekru", code: "#8A9A86" },
+            { name: "Gece Siyahı & Kırmızı", code: "#1E1E1E" }
+        ],
+        careInstructions: "Elde soğuk su ile çitilemeden yıkanabilir. Düz zeminde kurutunuz.",
+        badge: "Özel Tasarım"
+    },
+    {
+        id: "simli-geometrik-omuz-cantasi-gri",
+        name: "Simli Geometrik Omuz Çantası (Füme Gri)",
+        category: "cantalar",
+        categoryLabel: "Çantalar",
+        price: "850 ₺",
+        image: "images/canta-simli-geometrik-gri.jpg",
+        images: [
+            "images/canta-simli-geometrik-gri.jpg",
+            "images/canta-simli-geometrik-bej.jpg"
+        ],
+        shortDesc: "Füme gri tonlarında, simli ışıltılı ve kabartma desenli tığ işi omuz çantası.",
+        description: "Taş grisi ve fümenin dinginliğini simli makrome ipin zarafetiyle buluşturan model. Katmanlı tığ işi kabartma motifi çantaya üç boyutlu zengin bir görünüm kazandırır. Omuzda kaymayan örgü askısı ile gün boyu konfor sağlar.",
+        dimensions: "Genişlik: 24 cm | Yükseklik: 18 cm | Askı Boyu: 65 cm",
+        material: "Simli Füme Makrome İpi, Piramit Tığ İşi Kabartma, Metal Bağlantılar, Deri GK Etiket",
+        productionTime: "2 - 3 iş günü",
+        artisanNote: "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle tek tek ilmek atarak hazırlıyorum.",
+        colorNote: "Füme grinin yanı sıra şampanya bej, kömür karası veya gece mavisi seçenekleri mevcuttur.",
+        colors: [
+            { name: "Simli Füme / Gri", code: "#7A8288", image: "images/canta-simli-geometrik-gri.jpg" },
+            { name: "Simli Şampanya / Bej", code: "#D4C4A8", image: "images/canta-simli-geometrik-bej.jpg" },
+            { name: "Kömür Karası", code: "#24201E" },
+            { name: "Gece Mavisi", code: "#1D2D44" },
+            { name: "Gül Kurusu", code: "#B5838D" }
+        ],
+        careInstructions: "Elde yıkama önerilir. Asarak değil, düz zeminde kurutunuz.",
+        badge: "Trend Model"
     },
 
     // --- 2. CÜZDANLAR ---

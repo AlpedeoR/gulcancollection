@@ -177,3 +177,40 @@ Squarespace Domains kontrol panelinde (`domains.squarespace.com`) ilgili alan ad
 4. Sertifika hazır olduğunda sayfadaki **"Enforce HTTPS"** kutucuğu aktif hale gelir. Bu kutucuğu işaretleyin.
 5. Artık sitenize hem `http://` hem `https://` ile girilse bile otomatik olarak güvenli `https://www.gkcollcetion.com` adresine yönlenir ve tarayıcıda kilit simgesi görünür.
 
+---
+
+## 👜 7. Gerçek Çanta Modelleri, Fotoğrafları ve Alternatif Renkler
+
+Masaüstündeki çanta fotoğrafları ve bilgi notları baz alınarak gerçek ürünler siteye eklendi:
+
+1. **Simli Makrome Geometrik Omuz Çantası (Bej & Füme Gri):**
+   * Tığ işi kabartmalı piramit doku, gold metal halkalı örgü omuz askısı ve GK Collection deri etiket.
+   * `images/canta-simli-geometrik-bej.jpg` ve `images/canta-simli-geometrik-gri.jpg`.
+   * Simli Şampanya / Bej, Simli Füme / Gri, Gece Siyahı, Kiremit ve Zümrüt Yeşili renk seçenekleri.
+   * Renk butonuna tıklandığında ana görsel ilgili renge otomatik geçiş yapar.
+2. **Tahta Saplı Doğal Pamuk Makrome Çanta:**
+   * Doğal masif ahşap kulp ve kalın pamuk makrome örgü.
+   * `images/canta-tahta-sapli-makrome.jpg`.
+   * En 25 cm, Boy 14 cm. 1 hafta içinde kargoda.
+   * Doğal Ekru, Toprak Karamel, Adaçayı Yeşili, Kiremit ve Siyah renk seçenekleri.
+3. **Çift Renk Çizgili Puf Örgü Hobo Çanta:**
+   * Geniş hacimli, kabartmalı puf (popcorn) dikişli, kumaş astarlı hobo çanta.
+   * `images/canta-cizgili-puf-kahve.jpg` ve `images/canta-cizgili-puf-ekru.jpg`.
+   * Çikolata Kahve & Ekru ile Ekru & Çikolata Kahve çift renk seçenekleri ve özel ton kombinasyonları.
+4. **Ahşap Boncuk Saplı El Örgüsü Sepet Çanta:**
+   * Siyah cilalı ahşap halka ve küre boncuklu el yapımı sap, sık iğne tok örgü sepet form.
+   * `images/canta-ahsap-boncuk-sepet.jpg`.
+   * Mat Asil Siyah, Acı Kahve, Doğal Ekru, Bordo ve Haki Yeşili renk seçenekleri.
+5. **Fiyonk Detaylı Fitilli El Örgüsü Kol Çantası:**
+   * Fitilli dikey örgü dokusu, metal halkalı örgü askı ve çift renkli sevimli fiyonk broş.
+   * `images/canta-fiyonklu-fitilli.jpg`.
+   * Antrasit & Fıstık Yeşili & Tarçın, Krem & Pudra, Kiremit & Bej vb. renk kombinasyonları.
+6. **Simli Geometrik Omuz Çantası (Füme Gri):**
+   * `images/canta-simli-geometrik-gri.jpg`.
+   * Taş grisi ve fümenin simli ışıltıyla buluştuğu popüler renk varyantı.
+
+### 🖼️ Galeri ve Dinamik Renk-Fotoğraf Eşleşmesi
+* Ürün detay sayfasında birden fazla açısı olan çantalar için küçük resim galerisi (thumbnails) eklendi.
+* Müşteri renk seçeneklerinden bir renge (örneğin "Füme / Gri" veya "Ekru / Çikolata") tıkladığında çanta fotoğrafı anında o renge ait fotoğrafa dönüşmektedir.
+* Ana sayfadaki "Hikayemiz" alanına tüm koleksiyonun bir arada yer aldığı stüdyo fotoğrafı (`images/canta-koleksiyon-grup.jpg`) yerleştirildi.
+

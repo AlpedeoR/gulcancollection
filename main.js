@@ -266,7 +266,7 @@ function initProductDetailPage() {
 
     // Ürün görseli / placeholder
     const visualContent = product.image 
-        ? `<img src="${product.image}" alt="${product.name}" class="detail-main-img">`
+        ? `<img src="${product.image}" alt="${product.name}" class="detail-main-img" id="detail-active-img">`
         : `
             <div class="detail-placeholder">
                 ${getCategoryIcon(product.category)}
@@ -277,6 +277,17 @@ function initProductDetailPage() {
             </div>
         `;
 
+    // Çoklu görsel varsa galeri küçük resimler (thumbnails)
+    const galleryThumbsHtml = (product.images && product.images.length > 1) ? `
+        <div class="detail-thumbnails-row">
+            ${product.images.map((imgUrl, idx) => `
+                <button type="button" class="thumb-item ${idx === 0 ? 'active' : ''}" data-img-url="${imgUrl}" title="Görsel ${idx + 1}" aria-label="Görsel ${idx + 1}">
+                    <img src="${imgUrl}" alt="${product.name} Görsel ${idx + 1}">
+                </button>
+            `).join("")}
+        </div>
+    ` : "";
+
     // Detay sayfası içeriği
     detailContainer.innerHTML = `
         <div class="product-detail-layout">
@@ -286,6 +297,7 @@ function initProductDetailPage() {
                     ${product.badge ? `<span class="detail-badge">${product.badge}</span>` : ""}
                     ${visualContent}
                 </div>
+                ${galleryThumbsHtml}
                 
                 <div class="detail-trust-badges">
                     <div class="trust-badge-item">
@@ -424,6 +436,36 @@ function setupColorSelection(product, initialColor) {
                 colorTextBadge.textContent = currentColor;
             }
             updateWhatsappLink();
+
+            // Eğer bu renge ait özel bir çanta fotoğrafı tanımlıysa ana görseli otomatik değiştir
+            const colorObj = product.colors ? product.colors.find(c => c.name === currentColor) : null;
+            if (colorObj && colorObj.image) {
+                const activeImg = document.getElementById("detail-active-img");
+                if (activeImg) {
+                    activeImg.src = colorObj.image;
+                    document.querySelectorAll(".thumb-item").forEach(tb => {
+                        if (tb.getAttribute("data-img-url") === colorObj.image) {
+                            tb.classList.add("active");
+                        } else {
+                            tb.classList.remove("active");
+                        }
+                    });
+                }
+            }
+        });
+    });
+
+    // Galeri küçük resimlerine (thumbnails) tıklama olayları
+    const thumbButtons = document.querySelectorAll(".thumb-item");
+    thumbButtons.forEach(thumbBtn => {
+        thumbBtn.addEventListener("click", () => {
+            const imgUrl = thumbBtn.getAttribute("data-img-url");
+            const activeImg = document.getElementById("detail-active-img");
+            if (activeImg && imgUrl) {
+                activeImg.src = imgUrl;
+                thumbButtons.forEach(t => t.classList.remove("active"));
+                thumbBtn.classList.add("active");
+            }
         });
     });
 }
