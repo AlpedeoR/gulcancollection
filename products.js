@@ -96,7 +96,7 @@ const PRODUCTS_DATA = [
         name: "Ahşap Boncuk Saplı El Örgüsü Sepet Çanta",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "920 ₺",
+        price: "1500 ₺",
         image: "images/canta-ahsap-boncuk-sepet.jpg",
         images: [
             "images/canta-ahsap-boncuk-sepet.jpg"
