@@ -41,7 +41,7 @@ const PRODUCTS_DATA = [
         name: "Tahta Saplı Doğal Pamuk Makrome Çanta",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "1890 ₺",
+        price: "1190 ₺",
         image: "images/canta-tahta-sapli-makrome.jpg",
         images: [
             "images/canta-tahta-sapli-makrome.jpg"
@@ -68,7 +68,7 @@ const PRODUCTS_DATA = [
         name: "Çift Renk Çizgili Puf Örgü Hobo Çanta",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "1950 ₺",
+        price: "1500 ₺",
         image: "images/canta-cizgili-puf-kahve.jpg",
         images: [
             "images/canta-cizgili-puf-kahve.jpg",
@@ -96,7 +96,7 @@ const PRODUCTS_DATA = [
         name: "Ahşap Boncuk Saplı El Örgüsü Sepet Çanta",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "1500 ₺",
+        price: "1750 ₺",
         image: "images/canta-ahsap-boncuk-sepet.jpg",
         images: [
             "images/canta-ahsap-boncuk-sepet.jpg"
@@ -123,7 +123,7 @@ const PRODUCTS_DATA = [
         name: "Fiyonk Detaylı Fitilli El Örgüsü Kol Çantası",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "1880 ₺",
+        price: "1250 ₺",
         image: "images/canta-fiyonklu-fitilli.jpg",
         images: [
             "images/canta-fiyonklu-fitilli.jpg"
