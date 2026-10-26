@@ -12,7 +12,7 @@ const PRODUCTS_DATA = [
         name: "Simli Makrome Geometrik Omuz Çantası",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "1850 ₺",
+        price: "1000 ₺",
         image: "images/canta-simli-geometrik-bej.jpg",
         images: [
             "images/canta-simli-geometrik-bej.jpg",
@@ -150,7 +150,7 @@ const PRODUCTS_DATA = [
         name: "Simli Geometrik Omuz Çantası (Füme Gri)",
         category: "cantalar",
         categoryLabel: "Çantalar",
-        price: "1850 ₺",
+        price: "1000 ₺",
         image: "images/canta-simli-geometrik-gri.jpg",
         images: [
             "images/canta-simli-geometrik-gri.jpg",
