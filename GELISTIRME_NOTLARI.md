@@ -150,18 +150,18 @@ Yeni bir ürün eklemek veya var olan bir ürünü değiştirmek için sadece **
 
 ---
 
-## 🌐 6. Squarespace Domain & GitHub Pages HTTPS (SSL) Kurulum Rehberi
+## 🌐 6. Squarespace Domain (bygulcan.com) & GitHub Pages HTTPS (SSL) Kurulum Rehberi
 
-Squarespace'ten aldığınız alan adını GitHub Pages projenize bağlamak ve güvenli bağlantı (**HTTPS - SSL**) sağlamak için izlenecek adımlar:
+Squarespace'ten aldığınız yeni alan adını (`bygulcan.com`) GitHub Pages projenize bağlamak ve güvenli bağlantı (**HTTPS - SSL**) sağlamak için izlenecek adımlar:
 
 ### A. Repoya Eklenen `CNAME` Dosyası
-* Reponuzun kök dizinine otomatik olarak `CNAME` dosyası oluşturuldu ve GitHub'a yüklendi.
-* İçerisinde `www.gkcollcetion.com` yer almaktadır. Bu dosya GitHub Pages'e hangi alan adına hizmet vereceğini bildirir.
+* Reponuzun kök dizinindeki `CNAME` dosyası `www.bygulcan.com` olarak güncellendi ve GitHub'a yüklendi.
+* Bu dosya GitHub Pages'e hangi alan adına hizmet vereceğini bildirir (hem `bygulcan.com` hem de `www.bygulcan.com` olarak çalışır).
 
-### B. Squarespace DNS Yönetiminde Eklenecek Kayıtlar
-Squarespace Domains kontrol panelinde (`domains.squarespace.com`) ilgili alan adınızı seçip **"DNS Settings" (DNS Ayarları)** bölümüne gidin. Varsa varsayılan çakışan kayıtları temizleyip şu kayıtları ekleyin:
+### B. Squarespace DNS Yönetiminde Eklenecek Kayıtlar (`bygulcan.com`)
+Squarespace Domains kontrol panelinde (`domains.squarespace.com`) **bygulcan.com** alan adınızı seçip **"DNS Settings" (DNS Ayarları)** bölümüne gidin. Sayfada varsa varsayılan eski veya çakışan A / CNAME kayıtlarını silip şu kayıtları ekleyin:
 
-1. **4 Adet GitHub IP Adresi (Apex / Kök Alan Adı İçin A Kayıtları):**
+1. **4 Adet GitHub IP Adresi (Kök Alan Adı `@` İçin A Kayıtları):**
    * **Host:** `@` | **Type:** `A` | **Data:** `185.199.108.153`
    * **Host:** `@` | **Type:** `A` | **Data:** `185.199.109.153`
    * **Host:** `@` | **Type:** `A` | **Data:** `185.199.110.153`
@@ -172,10 +172,10 @@ Squarespace Domains kontrol panelinde (`domains.squarespace.com`) ilgili alan ad
 
 ### C. GitHub Pages'te HTTPS'i Aktifleştirme
 1. GitHub reponuza gidin: `https://github.com/AlpedeoR/gulcancollection` -> **Settings** -> **Pages**.
-2. **Custom domain** alanında `www.gkcollcetion.com` yazısını doğrulayın.
-3. DNS kayıtları Squarespace tarafından dünyaya yayıldığında (yaklaşık 10-30 dakika), GitHub otomatik olarak ücretsiz bir Let's Encrypt SSL sertifikası tanımlar.
-4. Sertifika hazır olduğunda sayfadaki **"Enforce HTTPS"** kutucuğu aktif hale gelir. Bu kutucuğu işaretleyin.
-5. Artık sitenize hem `http://` hem `https://` ile girilse bile otomatik olarak güvenli `https://www.gkcollcetion.com` adresine yönlenir ve tarayıcıda kilit simgesi görünür.
+2. **Custom domain** alanında `www.bygulcan.com` yazısını doğrulayın (veya gerekiyorsa Save'e basın).
+3. DNS kayıtları Squarespace tarafından dünyaya yayıldığında (genellikle 10-30 dakika içinde), GitHub otomatik olarak ücretsiz bir Let's Encrypt SSL sertifikası tanımlar ("DNS check successful" yazar).
+4. Sertifika hazır olduğunda sayfadaki **"Enforce HTTPS"** kutucuğu aktif (tıklanabilir) hale gelir. Bu kutucuğu işaretleyin.
+5. Artık sitenize `bygulcan.com` veya `www.bygulcan.com` üzerinden girildiğinde otomatik olarak güvenli `https://www.bygulcan.com` adresine yönlenir ve tarayıcıda kilit simgesi görünür.
 
 ---
 
